@@ -1,0 +1,222 @@
+/*-------------------------------------------MAIN-BOX----------------------------------------------------------*/
+.border{  
+    border: dotted rgb(118, 159, 205) 10px;
+    border-bottom: none;
+    width: 100px;
+    margin: 100px auto;    
+}
+h1{
+  text-align: center;
+  font-size: 88px;
+  margin: 0px;
+  font-family: Sacramento, cursive;
+  color: rgb(185, 215, 234)
+}
+h2{
+    color: rgb(118, 159, 205);
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+body{
+  margin: 0px;
+}
+/*-------------------------------------------NAVBAR------------------------------------------------------------*/
+
+.topnav {
+  background-color: rgb(118, 159, 205);
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color:  rgb(185, 215, 234);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Montserrat, sans-serif;
+}
+.topnav a:hover {
+  background-color:  rgb(118, 159, 205);
+  color: black;
+}
+.topnav a.active {
+  background-color:  rgb(118, 159, 205);
+  color: white;
+}
+/*-------------------------------------------ACCORDION------------------------------------------------------------*/
+@import "bourbon";
+
+/* Android 2.3 :checked fix */
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {        
+    animation: fake 1s infinite;
+}
+
+.worko-tabs {
+  justify-content: center;
+    margin: 20px;
+  	width: 80%;
+  
+    .state{
+      position: absolute;
+      left: -10000px;
+    }
+  
+    .flex-tabs{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: Montserrat, sans-serif;
+        
+        .tab{
+          flex-grow: 1;
+          max-height: 40px;
+        }
+      
+        .panel {
+          background-color: none;
+          line-height: 30px;
+          padding: 20px;
+          display: none;
+          width: 100%;
+          flex-basis: auto;
+          font-family: Montserrat, sans-serif;
+      }
+    }
+
+    .tab {
+      display: inline-block;
+      padding: 10px;
+      vertical-align: top;
+      background-color: none;
+      cursor: hand;
+      cursor: pointer;
+      border-left: 10px solid #ccc;
+      
+        &:hover{
+          background-color: rgb(118, 159, 205);
+        }
+    }  
+}
+
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label{
+    background-color:rgb(118, 159, 205);
+    cursor: default;
+    border-left-color: rgb(185, 215, 234);
+}
+
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel{
+    display: block;
+}
+
+@media (max-width: 600px){
+  .flex-tabs{
+    flex-direction: column;
+    
+    .tab{
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      
+        &:last-of-type{
+          border-bottom: none;
+        }
+    }
+    
+    #tab-one-label{order:1;}
+    #tab-two-label{order: 3;}
+    #tab-three-label{order: 5;};
+    #tab-four-label{order: 7;};
+    #tab-one-panel{order: 2;}
+    #tab-two-panel{order: 4;}
+    #tab-three-panel{order: 6;}
+    #tab-four-panel{ order: 8;}
+  }
+  
+    #tab-one:checked ~ .tabs #tab-one-label,
+    #tab-two:checked ~ .tabs #tab-two-label,
+    #tab-three:checked ~ .tabs #tab-three-label,
+    #tab-four:checked ~ .tabs #tab-four-label{
+      border-bottom: none;
+    }
+  
+  #tab-one:checked ~ .tabs #tab-one-panel,
+  #tab-two:checked ~ .tabs #tab-two-panel,
+  #tab-three:checked ~ .tabs #tab-three-panel,
+  #tab-four:checked ~ .tabs #tab-four-panel{
+    border-bottom: 1px solid #ccc;
+  }
+}
+/*-------------------------------------------TOP-CONTAINER-----------------------------------------------------*/
+.primary-box{
+  background-color: rgb(118, 159, 205);
+  text-align: center;
+  margin: auto;
+  padding: 50px
+}
+.summary{
+    padding-top: auto;
+    padding-bottom: auto;
+    width: 500px;
+    margin: auto;
+    font-family: Montserrat, sans-serif;
+}
+
+/*-------------------------------------------MIDDLE-CONTAINER--------------------------------------------------*/
+.workexperience{
+  text-align: center;
+  margin: auto;
+  font-family: Montserrat, sans-serif;
+  padding-top: 50px;
+}
+.middle-container{
+    text-align: center;
+    margin: auto;
+    font-family: Montserrat, sans-serif;
+}
+/*-------------------------------------------BOTTOM-CONTAINER--------------------------------------------------*/
+.skills{
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+/*-------------------------------------------FOOTER------------------------------------------------------------*/
+.footer{
+    background-color: rgb(118, 159, 205);
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    gap: 20px;
+    color: rgb(185, 215, 234);
+}
+footer{
+  background-color: rgb(118, 159, 205);
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  gap: 20px;
+  color: rgb(185, 215, 234);
+}
+.foots{
+  padding-top: 20px;
+  background-color: rgb(118, 159, 205);
+}
+#borders{
+  border: dotted  rgb(185, 215, 234) 10px;
+  border-bottom: none;
+}

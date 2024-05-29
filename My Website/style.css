@@ -1,0 +1,139 @@
+/*-------------------------------------------RESPONSIVENESS--------------------------------------------------*/
+@media (max-width: 800px) {
+  .my-skills{
+    flex-direction: column;
+  }
+}
+/*-------------------------------------------MAIN-BOX--------------------------------------------------*/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+h2{
+  font-family: Montserrat, sans-serif;
+  color: rgb(118, 159, 205);
+}
+h3{
+  font-family: Montserrat, sans-serif;
+  color: rgb(118, 159, 205);
+}
+p{
+  font-family: Montserrat, sans-serif;
+}
+
+/*-------------------------------------------NAVBAR--------------------------------------------------*/
+
+.topnav {
+    background-color: rgb(118, 159, 205);
+    overflow: hidden;
+  }
+  .topnav a {
+    float: left;
+    color:  rgb(185, 215, 234);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Montserrat, sans-serif;
+  }
+  .topnav a:hover {
+    background-color:  rgb(118, 159, 205);
+    color: black;
+  }
+  .topnav a.active {
+    background-color:  rgb(118, 159, 205);
+    color: white;
+  }
+
+/*-------------------------------------------TOP-CONTAINER--------------------------------------------------*/
+
+.top-container{
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgb(118, 159, 205);
+}
+h1{
+  font-size: 100px;
+  margin: 0px;
+  font-family: Sacramento, cursive;
+  color: rgb(185, 215, 234)
+}
+.header{
+  margin: 0px;
+  color: rgb(185, 215, 234)
+}
+.my-picture{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+}
+
+/*-------------------------------------------MIDDLE-CONTAINER--------------------------------------------------*/
+
+.middle-container{
+  padding-bottom: 50px;
+}
+hr {
+  border: dotted rgb(118, 159, 205) 10px;
+  border-bottom: none;
+  width: 100px;
+  margin: 100px auto;
+}
+.my-skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.skills1{
+  flex: 50%;
+}
+.skills2{
+  flex: 50%;
+}
+.skills3{
+  flex: 50%;
+}
+.myskills{
+  color: rgb(118, 159, 205);
+}
+.boton{
+  border-radius: 15px;
+  background-color: rgb(118, 159, 205);
+  border: none;
+  padding: 15px;
+  font-family: Montserrat, sans-serif;
+}
+.tindog{
+  height: 300px;
+  border-radius: 5%;
+}
+.moveit{
+  height: 300px;
+  border-radius: 5%;
+}
+
+/*-------------------------------------------BOTTOM-CONTAINER--------------------------------------------------*/
+
+.bottom-container{
+  padding: 25px;
+  background-color: rgb(118, 159, 205);
+}
+.contact-me{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: rgb(185, 215, 234);
+}
+.mymail{
+  background-color: rgb(118, 159, 205);
+  color: rgb(185, 215, 234);
+  border: none;
+  font-family: Montserrat, sans-serif;
+}
+.foot{
+  color: white;
+}
